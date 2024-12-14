@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.title h2 {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.card {
+    width: 50% !important;
+    height: 50% !important;
+}
+
+.card img {
+    width: 50% !important;
+    height: 50% !important;
+}
+
+nav {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 3 !important;
+}
+
+nav .brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #245990;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 35px;
+    transition: background-color 0.3s, color 0.3s;
+    color: #245990;
+    font-size: 18px;
+}
+
+.sale {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    background-color: rgb(250, 248, 243);
+    width: 350px !important;
+    height: 250px !important;
+    border-radius: 20px;
+}
+
+.sale .img {
+    width: 50% !important;
+    height: 100% !important;
+    padding: 10px;
+}
+
+.sale .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.sale .write-up {
+    width: 50%;
+    align-self: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.sale .write-up h3 a {
+    color: black !important;
+    text-decoration: none;
+    text-align: center !important;
+    font-size: 1.2rem;
+    font-weight: 700 !important;
+}
+
+.sale .write-up h3 a:hover {
+    color: red !important;
+    text-decoration: underline !important;
+}
+
+.sale .write-up p {
+    font-size: 0.7rem;
+}
+
+nav a:hover,
+nav a.active {
+    background: #4d9176;
+    color: #fff;
+    border-radius: 3px;
+}
+
+main .section-title {
+    font-size: 22px;
+
+}
+
+main .left {
+    border-right: thin solid #d4d4d4;
+    padding-right: 20px;
+}
+
+main .left a {
+    display: block;
+    text-decoration: none;
+    color: #5555;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+main .left a:hover {
+    text-decoration: underline;
+}
+
+main .rigth {}
+
+main .right .product {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+
+main .right .title a {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: #555;
+    line-height: 26px;
+}
+
+main .right .title a:hover {
+    text-decoration: underline;
+}
+
+main .right .description {
+    margin-top: 10px;
+}
+
+p.price {
+    font-size: 24px !important;
+    margin-top: 30px !important;
+    color: darkred !important;
+}
+
+/* 
+
+/* 
+This is The footer
+ */
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.b-example-divider {
+    height: 3rem !important;
+    background-color: rgba(0, 0, 0, .1) !important;
+    border: solid rgba(0, 0, 0, .15) !important;
+    border-width: 1px 0 !important;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15) !important;
+}
+
+.carousel img {
+    height: 50vh;
+}
+
+h2.about {
+    font-size: 4rem !important;
+    text-align: center;
+}
+
+.log {
+    height: 100vh !important;
+}
+
+.i {
+    font-size: 2rem !important;
+    text-decoration: none !important;
+    list-style-type: none !important;
+}
+
+.login {
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: white !important;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh !important;
+}
+
+.login h2 {
+    font-size: 2rem !important;
+    font-weight: 600;
+}
+
+@media screen and (max-width:750px) {
+    .statue {
+        display: none !important;
+    }
+
+    .elec img {
+        display: none !important;
+    }
+
+    .shipping-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shipping-details div {
+        padding: 20px 0;
+    }
+}
+
+.what {
+    width: 250px !important;
+    height: 300px !important;
+    border: 1.1px solid rgba(0, 0, 0, 0.279) !important;
+    border-radius: 10px;
+}
+
+.what .img {
+    width: 100%;
+    height: 50%;
+    border: 1px solid black !important;
+}
+
+.what .img img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.what .write-up .title h3 {
+    text-align: center !important;
+    font-weight: 600;
+    font-size: 1.7rem !important;
+}
+
+.what .write-up p {
+    text-align: center !important;
+    font-size: 0.6rem !important;
+    color: gray;
+}
+
+.shipping-details {
+    display: flex !important;
+    justify-content: space-between;
+}
+
+.shipping-details i {
+    font-size: 1.7rem;
+}
+
+.shipping-details h3 {
+    font-weight: 600;
+}
