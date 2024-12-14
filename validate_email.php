@@ -1,0 +1,24 @@
+<?php
+$api_key = "YOUR_UNIQUE_API_KEY";
+
+$ch = curl_init();
+
+curl_setopt_array($ch, [
+    CURLOPT_URL => "https://emailvalidation.abstractapi.com/v1?api_key=$api_key&email=$email",
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_FOLLOWLOCATION => true
+]);
+$response = curl_exec($ch);
+
+curl_close($ch);
+$data = json_decode($response, true);
+
+if ($data['deliverability'] === "UNDELIVERABLE") {
+    exit("Undeliverable");
+}
+
+if ($data["is_disposable_email"]["value"] === true) {
+    exit("Disposable");
+}
+
+echo "<script>alert('Email is invalid'); </script>";
